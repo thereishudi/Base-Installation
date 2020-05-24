@@ -34,6 +34,7 @@ docker run -p 3306:3306 --name mysql \
 - `-v /usr/local/docker/mysql/logs:/var/log/mysql`：将主机当前目录下的 logs 目录挂载到容器的 /var/log/mysql
 - `-v /usr/local/docker/mysql/data:/var/lib/mysql`：将主机当前目录下的 data 目录挂载到容器的 /var/lib/mysql
 - `-e MYSQL\_ROOT\_PASSWORD=123456`：初始化root用户的密码
+- `-d mysql`：守护态运行
 
 ### 查看容器对应状况
 
