@@ -24,7 +24,7 @@ docker run -p 3306:3306 --name mysql \
 -v /usr/local/docker/mysql/logs:/var/log/mysql \
 -v /usr/local/docker/mysql/data:/var/lib/mysql \
 -e MYSQL_ROOT_PASSWORD=123456 \
--d mysql
+-d mysql:5.7.22
 ```
 
 命令参数：
@@ -42,5 +42,4 @@ docker run -p 3306:3306 --name mysql \
 docker ps
 ```
 
-
-
+## 这里注意，如果第一次安装不成功要删除mysql下的三个文件夹，然后再次安装别的版本。
